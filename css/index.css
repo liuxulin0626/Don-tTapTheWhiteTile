@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.box {
+	position: relative;
+	width: 400px;
+	height: 600px;
+	margin: 150px auto;
+	border: 1px solid black;
+	/* overflow: hidden; */
+}
+
+.box .go {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 600px;
+}
+.box .go a {
+	font-size: 60px;
+	color: black;
+}
+.box table {
+	position: relative;
+	/* 让游戏主体区域与容器一样大，并让主体区域向上走一个块的高度 */
+	top: -150px;
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	border: 1px solid red;
+}
+.box table tr {
+	display: flex;
+	width: 100%;
+	height: 150px;
+}
+.box table td {
+	/* 一个块宽100px,高150px */
+	width: 100px;
+	height: 150px;
+	box-sizing: border-box;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.box table td:first-child {
+	border-left: none;
+}
